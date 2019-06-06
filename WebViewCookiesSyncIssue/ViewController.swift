@@ -32,8 +32,8 @@ class ViewController: UIViewController {
             ])
     }
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
 
         setCookie {
             self.getCookie(with: "test", completion: { result in
